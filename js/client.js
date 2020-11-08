@@ -20,6 +20,7 @@ animals.forEach(function (animal) {
       <figcaption><h1>${animal.title}</h1><p>${animal.credit}</p><a href=${animal.url}><h3><p>By ${animal.credit}</a></h3></a></figcaption>
      </figure>`;
 
+
   // Using element.innHTML (or other DOM manipulation technique), add the list of figure cards in `outputHTML` to the `gallery` variable you created earlier.
   gallery.innerHTML = outputHTML;
 })

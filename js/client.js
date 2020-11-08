@@ -14,12 +14,11 @@ animals.forEach(function (animal) {
 
   outputHTML +=
     `<figure class="card">
-      <img src = ${animal.path} alt = 'Lorem Picsum: ${animal.title}' ${Object.keys(animal)} = ${Object.values(animal)} ${Object.keys(animal)} = ${Object.values(animal)}>
+      <img src = ${animal.path} alt = 'Lorem Picsum: ${animal.title}'  width="${animal.width}" height="${animal.height}">
 
 
-      <figcaption><h1>${animal.title}</h1><p>${animal.credit}</p><a href=${animal.url}><h4> Link</h4> </a></figcaption>
+      <figcaption><h1>${animal.title}</h1><p>${animal.credit}</p><a href=${animal.url}><h3><p>By ${animal.credit}</a></h3></a></figcaption>
      </figure>`;
-
 
   // Using element.innHTML (or other DOM manipulation technique), add the list of figure cards in `outputHTML` to the `gallery` variable you created earlier.
   gallery.innerHTML = outputHTML;
